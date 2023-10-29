@@ -21,6 +21,7 @@ FluidAppMain main;
 	@Test(priority = 0)
 	public void FluidAppTTest() throws InterruptedException {
 		main.FluidApp();
+		
 	}
 
 	

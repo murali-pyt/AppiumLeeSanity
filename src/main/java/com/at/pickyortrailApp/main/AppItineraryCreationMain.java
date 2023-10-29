@@ -15,71 +15,26 @@ public class AppItineraryCreationMain extends BaseClass{
 	
 	
 	public void itineraryCreation() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		locators = new ItineraryCreationLocators();
-		try {
 		locators.clickAction(locators.getNext());
 		locators.clickAction(locators.getNext());
 		locators.clickAction(locators.getNext());
-		}
-		catch(Exception e){
-			System.out.println("Unable to click the Next in the App");
-		}
-		try {
 			   locators.clickAction(locators.getStartplanning());
-				}
-				catch(Exception e){
-					System.out.println("Unable to click the Start Planning in the App");
-				}
-		
-		try {
 			   locators.clickAction(locators.getCountry());
-				}
-				catch(Exception e){
-					System.out.println("Unable to Select the country in the App");
-				}
-		
-		try {
+				
 			   locators.clickAction(locators.getMonth());
-				}
-				catch(Exception e){
-					System.out.println("Unable to Select the month in the App");
-				}
-		
-		try {
+				
 			   locators.clickAction(locators.getDate());
-				}
-				catch(Exception e){
-					System.out.println("Unable to Select the date in the App");
-				}
-		
-		try {
+				
 			   locators.clickAction(locators.getFlight());
-				}
-				catch(Exception e){
-					System.out.println("Unable to Select the flight in the App");
-				}
-		
-		try {
+				
 			   locators.clickAction(locators.getDuration());
-				}
-				catch(Exception e){
-					System.out.println("Unable to Select the duration in the App");
-				}
-		
-		try {
+				
 			   locators.clickAction(locators.getPassengerCount());
-				}
-				catch(Exception e){
-					System.out.println("Unable to Select the Passenger Count in the App");
-				}
-		
-		try {
+				
 			   locators.clickAction(locators.getCity());
-				}
-				catch(Exception e){
-					System.out.println("Unable to Select the city in the App");
-				}
+				
 		
 		try {
 			   locators.clickAction(locators.getBuildItinerary());

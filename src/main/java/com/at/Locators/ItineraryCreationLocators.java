@@ -34,7 +34,7 @@ public class ItineraryCreationLocators extends BaseClass{
 	@FindBy(xpath = "//android.widget.TextView[@text = 'Europe']")  
 	WebElement country;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text = 'Oct']")  
+	@FindBy(xpath = "//android.widget.TextView[@text = 'Feb']")  
 	WebElement month;
 	
 	@FindBy(xpath = "//android.widget.TextView[@text = '30']")  

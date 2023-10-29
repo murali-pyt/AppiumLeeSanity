@@ -19,8 +19,8 @@ public class Baseclass {
 		cap.setCapability("deviceName", "Android Emulator");
 		cap.setCapability("udid", "emulator-5554");   //b9f8f075
 		cap.setCapability("platformName", "Android");
-		cap.setCapability("app", "/Users/pyt/Appium/Fluid.apk");
-		cap.setCapability("appWaitActivity", "com.fluid.travel.MainActivity");
+		cap.setCapability("app", "/Users/pyt/Appium/PickyourtrailApp.apk");
+		cap.setCapability("appActivity", "com.pickyourtrail.MainActivity");
 //		cap.setCapability("platformVersion", "13");
 //		cap.setCapability("appPackage", "com.pickyourtrail"); // com.pickyourtrail
 //		cap.setCapability("appActivity", "com.pickyourtrail.MainActivity"); // com.pickyourtrail.MainActivity

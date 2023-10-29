@@ -19,7 +19,7 @@ public class ItineraryPageMain extends Baseclass {
 		 Thread.sleep(5000);
 		driver.findElement(By.xpath("//android.widget.ImageView")).click(); // Start planning
 		driver.findElement(By.xpath("//android.widget.TextView[@text = 'Europe']")).click(); // Select Europe
-		driver.findElement(By.xpath("//android.widget.TextView[@text = 'Oct']")).click(); // select date
+		driver.findElement(By.xpath("//android.widget.TextView[@text = 'Feb']")).click(); // select date
 		driver.findElement(By.xpath("//android.widget.TextView[@text = '30']")).click(); // select date
 		driver.findElement(By.xpath("//android.widget.TextView[@text = 'Bengaluru, BLR']")).click(); // skip flight
 		driver.findElement(By.xpath("//android.widget.TextView[@text = '6-9 days']")).click(); // duration days

@@ -22,7 +22,7 @@ public class BaseClass {
 		cap.setCapability("deviceName", "Android Emulator");
 		cap.setCapability("udid", "emulator-5554");   //b9f8f075
 		cap.setCapability("platformName", "Android");
-		cap.setCapability("app", "/Users/pyt/Appium/PickyourtrailLatest.apk");   ///Users/pyt/Appium/Fluid.apk
+		cap.setCapability("app", "/Users/pyt/Appium/PickyourtrailApp.apk");   ///Users/pyt/Appium/Fluid.apk
 		cap.setCapability("appWaitActivity", "com.pickyourtrail.MainActivity");   //com.fluid.travel.MainActivity
 	//	cap.setCapability("appWaitDuration", "60000");
 	//	cap.setCapability("deviceReadyTimeout", "30");

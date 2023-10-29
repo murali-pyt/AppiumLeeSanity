@@ -6,6 +6,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 
 public class BaseClassFluid {
@@ -13,15 +14,17 @@ public class BaseClassFluid {
 	public static AndroidDriver driver;
 	public static ThreadLocal<AndroidDriver> tdriver = new ThreadLocal<AndroidDriver>();
 	
-	
+//	public static String settingsAppPackageName="com.android.settings";
+//	public static String settingsAppActivityName="com.android.settings.Settings";
+		
 	
 	public AndroidDriver initialization() {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("deviceName", "Android Emulator");
-		cap.setCapability("udid", "emulator-5554");   //b9f8f075
+		cap.setCapability("udid", "emulator-5554");   
 		cap.setCapability("platformName", "Android");
-		cap.setCapability("app", "/Users/pyt/Appium/Fluid.apk");   ///Users/pyt/Appium/Fluid.apk
-		cap.setCapability("appWaitActivity", "com.fluid.travel.MainActivity");   //com.fluid.travel.MainActivity
+		cap.setCapability("app", "/Users/pyt/Appium/Fluid.apk");   
+		cap.setCapability("appWaitActivity", "com.fluid.travel.MainActivity");   
 		cap.setCapability("noReset", true);
 //		cap.setCapability("appWaitDuration", "60000");
 //		cap.setCapability("deviceReadyTimeout", "30");
@@ -37,10 +40,15 @@ public class BaseClassFluid {
 		return getDriver();
 	}
 	
+	
+	
 	public static synchronized AndroidDriver getDriver() {
 		
 		return tdriver.get();
 	}
+	
+	
+	
 
 
 }
