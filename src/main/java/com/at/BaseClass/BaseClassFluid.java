@@ -21,7 +21,7 @@ public class BaseClassFluid {
 	public AndroidDriver initialization() {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("deviceName", "Android Emulator");
-		cap.setCapability("udid", "emulator-5554");   
+		cap.setCapability("udid", "emulator-5558");   
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("app", "/Users/pyt/Appium/Fluid.apk");   
 		cap.setCapability("appWaitActivity", "com.fluid.travel.MainActivity");   
